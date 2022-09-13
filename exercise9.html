@@ -6,21 +6,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>REGISTRATION</title>
 </head>
-<body bgcolor="d9d9d9">
+<body bgcolor="d9d9d9" form style="width: 50vw; margin-left: 25vw">
     <main>
       <section>
           <h1>Personal Info</h1>
           <p>
-            <label>First Name:</label>
-            <input type="text" placeholder="input your name" value="your name" maxlength="20" required>
+            <label>Full Name:</label>
+            <input type="text" placeholder="complete name" value="complete name" maxlength="40" required>
           </p>
           <p>
-            <label>Last Name:</label>
-            <input type="text" placeholder="input your name" value="your name" maxlength="20" required>
+            <label>Password:</label>
+            <input type="password" name="my password" id="my password">
           </p>
-            <button>Clear Form</button>
-            <button>Cancel</button>
-            <input type="Submit">
+          <p>
+            <label>Email:</label>
+            <input type="email" name="email address">
+          </p>
+          <p>
+            <span>Status:</span>
+             <label for="status-single"><input type="radio" name="status" id="status-single" value="S">Single</label> 
+             <label for="status-married"><input type="radio" name="status" id="status-married" value="M">Married</label>
+             <label for="status-widow"><input type="radio" name="status" id="status-widow" value="W">Widow</label> 
+          </p>
+          <p>
+            <label>Date of Birth:</label>
+            <input type="date" name="dob" id="dob">
+          </p>
+          <p>
+            <label>Age:</label>
+            <input type="number" id="age" name="age">
+          </p>
+          <p>
+            <span>Government Benefits:</span>
+            <label for="SSS"><p><input type="checkbox" name="SSS" id="SSS">SSS</p>  
+            <label for="TIN"><p><input type="checkbox" name="TIN" id="TIN">TIN</p>
+            <label for="HDMF"><p><input type="checkbox" name="HDMF" id="HDMF">HDMF</p>
+            </label>
+          </p>
+          <p>
+            <label>Preferred Time:</label>
+            <input type="time" id="time" name="time">
+          </p>
+          <p>
+            <span>Payment Option:</span>
+            <select name="options" id="options">
+                <option value="monthly">Monthly</option>
+                <option value="yearly">Yearly</option>
+                <option value="weekly">Weekly</option>
+            </select>
+          </p>
+          <p>
+            <label>Internet Provider:</label>
+            <input type="text" name="internet" id="internet">
+          </p>
+          <p>
+            <label>Upload Photo:</label>
+            <input type="file" name="uploadfile" id="uploadfile">
+          </p>
+          <p>
+            <label>Additional Info:</label>
+            <textarea id="freeform" name="freeform" width="10" height="20"></textarea>
+            <br>
+            <br>
+          </p>
+          <input type="Submit">
 
 
       </section>
