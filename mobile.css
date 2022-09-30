@@ -1,0 +1,68 @@
+body {
+    font-family: sans-serif;
+}
+nav{
+    display: flex;
+    flex-direction:column;
+    justify-items: center;
+    align-items: center;
+}
+.li-nav-items li{
+    list-style: none;
+}
+.li-nav-items li a{
+    text-decoration: none;
+}
+.create-post-btn{
+    background-color: #ff5a5f;
+    padding: 6px 20px;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
+nav ul li{
+    padding: 3px;
+}
+nav img {
+    margin: 4px;
+    width: 100%;
+}
+.li-nav-items{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+header{
+    display: flex;
+    min-height: 80vh;
+    /* Relative to 1% of the height of the viewport 
+    Viewport = the browser window size. If the viewport is 50cm wide, 80vh-40cm
+    */
+    background: url("assets/Sunset.jpg");
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+}
+.header-content h1 {
+    font-size: 5rem;
+    padding: 10px;
+    color: #14213d;
+}
+.header-content {
+    text-align: center;
+    padding: 10px;
+}
+.header-content a {
+    border: 1px solid #333;
+    padding: 15px 20px;
+    background-color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    color:#333;
+}
+header > div p {
+    margin: 40px;
+}
