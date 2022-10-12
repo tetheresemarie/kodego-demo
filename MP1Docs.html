@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Land Title and Documentation</title>
+    <!--<link rel="stylesheet" href="MP1Condo.css">-->
+    <script src="https://kit.fontawesome.com/58b4bf792b.js" crossorigin="anonymous"></script>"></script>></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    
+    <style>
+     .my-custom-height {
+            height: 35px;
+        }
+        body {
+            background: #09390a;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .logo {
+            display: flex;
+            min-height: 10vh;
+            justify-content: center;
+            align-items: center;
+            background-size: cover;
+        }
+        .navbar-nav {
+            font-weight:800; 
+            color: #09390a;
+        }
+        .navbar-expand-lg {
+            background-color: #ffde59;
+        }
+        .navbar-brand {
+            color: #09390a;
+            font-weight: bolder;
+        }
+        h1 {
+            text-align:center;
+            color: #c9e265;
+            font-weight: bold;
+            font-size: 50px;
+        }
+        h2 {
+            text-align: center;
+            color: #09390a;
+            font-weight: bold;
+            background: #ffde59;
+        }
+        h3 {
+            text-align: center;
+            color: #ffde59;
+            font-weight: bold;   
+            font-style: italic; 
+        }
+        ul {
+          text-align: center;
+            color: #ffde59;
+            font-style: italic; 
+        }
+        h4 {
+            text-align: center;
+            color: #ffde59;
+            font-weight: bold;   
+            font-style: italic;
+        }
+        h5 {
+            text-align: left;
+            color: #ffde59;
+            font-weight: bold;   
+            font-style: italic;
+        }
+        .text-center{
+          color: #ffde59;
+          text-align: center;
+          justify-content: center;
+          align-items: center;
+        }
+        
+        .img-fluid {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-size: cover;
+            margin-top: 10px;
+            margin-right: auto;
+            font-weight: bold;
+        }
+        .btn{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bolder;
+            font-style: italic;
+            color: #09390a;
+            background-color: #ffde59;
+            font-size: large;
+        }
+        .img-fluid {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-size: cover;
+            margin-top: 10px;
+            margin-bottom: 50px;
+            font-weight: bold;
+            margin-left: auto;
+        }            
+        .content-1 {
+            color: #c9e265;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 80px;
+            justify-content: center;
+            padding: 0%;
+        }
+        .content-2 {
+          color: #c9e265;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 80px;
+            justify-content: center;
+            padding: 0%;
+        }
+        .content-3 {
+          color: #c9e265;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 80px;
+            justify-content: center;
+            padding: 0%;
+        }
+        hr {
+          color: #ffde59;
+        }   
+    </style>
+</head>
+<body>
+    <a href="http://localhost/kodego-demo/MP1Contact.html" class="logo">
+        <img src="assets/mp1.png"; width="200px"; height="200px"; alt="">
+    <br>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="http://localhost/kodego-demo/MP1Contact.html">JOHNMATT REAL ESTATE PH</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="http://localhost/kodego-demo/MP1Home.html">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="http://localhost/kodego-demo/MP1Condo.html">CONDOMINIUMS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="http://localhost/kodego-demo/MP1Lot.html">HOUSE & LOTS</a>
+              </li>
+                            
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="http://localhost/kodego-demo/MP1Lot.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  SERVICES</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="http://localhost/kodego-demo/MP1PMO.html">Property Management</a></li>
+                  <li><a class="dropdown-item" href="http://localhost/kodego-demo/MP1Docs.html">Land Title & Documentation</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="http://localhost/kodego-demo/MP1Contact.html">CONTACT</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <br>
+    <header>
+        <h1>LAND TITLE & DOCUMENTATION</h1>
+    </header>
+          <br>
+          <br>
+          <h2>HOW TO TRANSFER  TITLE IN THE PHILIPPINES</h2>
+          <h3>Source: LAMUDI</h3>
+          <div class="container text-center">
+            <div class="row">
+              <div class="col">
+                <img src="assets/mp38.jpg" width="1000px" height="600px" class="img-fluid" alt="...">
+              </div>
+            </div>
+          </div>
+          <div class="content-1">   
+            <p> A land title is essential to demonstrate to the public that you legitimately own a piece of property. Whether you're buying a 
+                house or just a parcel of land, full ownership in the Philippines involves the transfer of land title.
+  
+            <p>Property buyers must not only understand this process. Property agents and sellers should be familiar with the process of 
+                transferring ownership from the previous owner to the new owner.</p>
+              
+            <p>If you are a property buyer, make it clear to the seller and the broker or agent who should handle the land title transfer. 
+                However, if you want to do it yourself, you should understand the complexities of the procedure and how to carry it out.</p>
+            <br>
+            <h4>What are the Transfer of Title Requirements and Steps?</h4>  
+            <br>
+            <p> Property buyers should be aware that the deadline to transfer the land title in the Philippines begins once the deed of 
+                sale is signed and notarized. The buyer should have already made arrangements with the seller and broker to expedite the title transfer process.
+
+            <h5>Step 1: Prepare the Requirements for Transfer of Title</h5>
+            <p>Make sure you have the original copy and at least two photocopies of the following:</p>
+               <li>Deed of Sale</li> 
+               <li>Tax Identification Number and ID of the buyer and the seller</li>
+               <li>Transfer Certificate of Title for a house or a lot</li>
+               <li>Condominium Certificate of Title (for condominiums)/li>Condominium Certificate of Title (for condominiums)
+               <li>Tax Clearance</li>
+               <li>Tax Declaration</li>
+               <li>Real Property Tax for the current year</li>
+               <li>Management certificate from the condominium admin</li>
+               <li>Certificate of non tenancy from the condominium admin</li>
+               <li>Photo of the property for sale</li>
+               <li>Sworn Declaration of No Improvements to show that the sold property hasn’t incurred any improvements</li>
+               <li>Special Power of Attorney (SPA) if the person signing is not the owner indicated in the Deed of Sale</li>
+               <li>Certificate of the Philippine Consulate if the SPA was executed abroad</li>
+               <li>Marriage Certificate, Birth Certificate, and Certificate of No Marriage</li>
+               <li>Vicinity map or location map of the property</li> 
+               <li>Other documents required by the Register of Deeds, like consolidation of ownership or mortgage settlement</li>
+               <br>
+               <div class="container text-center">
+                <div class="row">
+                  <div class="col">
+                    <img src="assets/mp40.JPG" width="1000px" height="600px" class="img-fluid" alt="...">
+                  </div>
+                </div>
+              </div>          
+            <h5>Step 2: Submit all the Required Documents for Tax Computation</h5>
+            <p>Once the deed of sale is signed and notarized, you need to submit it to the Regional Office of the 
+            Bureau of Internal Revenue covering the jurisdiction of your property along with other required documents.</p>
+            <p>The BIR representative will evaluate your documents and start computing for the Capital Gains Tax [3] 
+            (CGT-BIR Form 1706) or Creditable Withholding Tax (CWT-BIR FORM 1606).</p>
+            <p>Take note that the Capital Gains Tax should be paid within 30 days from the date of notarization, 
+            and DST[4] should be paid on the nearest fifth day of the month after the notarization date. Make sure to 
+            comply to avoid penalties and fines.</p>
+            <br>
+            <h5>Step 3: Pay the Required Taxes</h5>
+            <p>You may now proceed to the Authorized Agent Bank (AAB) duly accredited by the BIR and pay the required 
+            Documentary Stamp Tax, Value Added Tax, and Capital Gains Tax. </p>
+            <p>Prepare the following documents which you might also need:</p>
+            <li>Signed computation sheet from the BIR</li>
+            <li>Deed of Conveyance - A document that indicates the transfer of ownership from the previous owner or seller to the buyer</li> 
+            <li>Three copies of duly filled out BIR Form 1706 for Capital Gains Tax signed by the seller</li>
+            <li>Three copies of filled out BIR Form 2000-OT to pay for Documentary Stamp signed by the buyer</li>
+        </div>
+        <div class="container text-center">
+            <div class="row">
+              <div class="col">
+                <img src="assets/mp39.JPG" width="1000px" height="600px" class="img-fluid" alt="...">
+              </div>
+            </div>
+          </div>
+        <div class="content-2">
+          <h5>Step 4: Get a Certificate Authorizing Registration (CAR)</h5>
+          <p>The Certificate of Authorizing Registration (CAR) is mandated by the National Internal Revenue Code. It’s a tax clearance document
+            and proof that all taxes entailed with the sold property have been settled accordingly.</p>
+          <p>You can claim the CAR as scheduled along with these documents which should have already been stamped by the BIR:</p>
+              <li> Deed of Sale - Original copy stamped received by the BIR</li>
+              <li>Copy of the CCT or TCT as received by the BIR</li>
+              <li>Copies of the Form 2000 (DST and the BIR Form 1706 CGT) stamped received by the BIR</li>
+              <li>Declaration for land and improvement</li>
+              <li>You’ll receive two copies of the CAR. The brown copy is for you to keep while the blue copy is for you to use during 
+                  the transfer.</li>
+          <br>
+          <h5>Step 5: Submit the CAR to the Local Treasurer’s Office</h5>
+          <p>At this stage, you need to submit your CAR to the local Treasurer’s Office for the Transfer Tax. Make sure to pay the 
+            Transfer Tax within 60 days after the notarization of the Deed of Conveyance.</p>
+          <p>Upon payment, the Treasurer’s Office will provide you with a receipt as proof of payment of Transfer Tax. 
+            You’ll then need to go back to the BIR to have the Deed of Conveyance stamped.</p>
+          <p>After this stage, you should have the original Deed of Conveyance stamped marked and signed by both the BIR and 
+            the Treasurer’s Office.</p>
+          <h5>Step 6: Submit the Documents to the Registry of Deeds for Registration</h5>
+          <p>It’s now time to register your property. You can now proceed to the Registry of Deeds and submit the following:</p>
+              <li>Deed of Conveyance</li>
+              <li>Deed of Absolute Sale</li>
+              <li>Copies of IDs of all signatories</li>
+              <li>Official Receipt of Notary Public used to notarize the Deed of Sale</li>
+              <li>Certified True Copy of the Original Land Title</li>
+              <li>Tax Clearance</li>
+              <li>Latest Tax Declaration</li>
+              <li>Clearances from the Home Owners Association, if applicable</li>
+              <li>Birth Certificate</li>
+              <li>Certificate of No Marriage</li>
+              <li>Marriage Certificate</li>
+          <br>
+          <p>Once you've submitted the required documents and paid for the registration fees, you usually need to wait for two weeks 
+            before you can acquire the new land title under your name. </p>
+          
+          <h5>Step 7: Secure a New Tax Declaration from the Local Assessor’s Office</h5>
+          <div class="container text-center">
+            <div class="row">
+              <div class="col">
+                <img src="assets/mp41.jpg" width="1000px" height="600px" class="img-fluid" alt="...">
+              </div>
+            </div>
+          </div>
+          <p>With your new title acquired from the Registry of Deeds, you can now secure a New Tax Declaration Certificate from the 
+            Assessor’s Office. The new owner should pay all assessment fees under the new tax declaration.</p>
+          <br>
+          <p>Here are some documents you may need to submit:</p>  
+              <li>Original copy and photocopy of the new land title</li>
+              <li>A copy of the old title named under the previous owne</li>
+              <li>Deed of Conveyance</li>
+              <li>Certified True Copy of the New Tax Declaration</li>
+              <li>Business Tax Receipt or Business Permit, if the previous owner is a corporation</li>
+              <li>Duplicate copy and photocopy of the Certificate Authorizing Registration (CAR) from the BIR</li>
+              <li>Tax Clearance</li>
+              <li>Photos of the property bought</li>
+        </div>
+        <div class="content-3">
+        <h3>CONCLUSION</h3>
+        <br>
+        <p>Property ownership in the Philippines appears to be a complicated process, but it only takes a little patience to properly 
+          transfer titles. To make the entire process more manageable, you must have the necessary documents and be familiar with the 
+          relevant government agencies.</p>
+        <p>Understanding the significance of legal documents, such as a land title, will also enable you to reap the full benefits of property ownership. 
+          Allow this guide on how to transfer a land title in the Philippines to assist you!</p>
+        </div>
+    <br>
+    <a href="http://localhost/kodego-demo/MP1Contact.html" class="btn btn-warning">CLICK HERE FOR A FREE CONSULTATION</a>
+    
+    <br>
+  
+
+   
+    <!--<script src="./assets/js/bootstrapprj.bundle.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+        
+    
+</body>
+</html>
