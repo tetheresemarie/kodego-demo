@@ -7,7 +7,7 @@
 }
 body {
     height: 100vh;
-    background-color:#cd2fad;
+    background-color:rgb(252, 199, 208);
     display: flex;
     align-items: center;
     justify-content: center;
