@@ -19,6 +19,7 @@
         .navbar-nav {
             font-weight:800; 
             color: #09390a;
+            padding: 20px;
         }
       .logo {
             display: flex;
@@ -116,8 +117,8 @@
             background-size: cover;
         }
         .img-fluid {
-            width: 600px;
-            max-height: 400px;
+            width: 800px;
+            max-height: 500px;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -141,6 +142,16 @@
             background-color: #ffde59;
             font-size: large;
        }
+
+       /* responsive */
+       @media (max-width:900px){
+        .iframe{
+          margin-bottom: 40px;
+          width: 100%;
+          height:500px;
+          padding: auto;
+        }
+       }
        
         
     </style>
@@ -148,13 +159,13 @@
 
 </head>
 <body>
-    <a href="https://tetheresemarie.github.io/kodego-demo/MP1Contact.html" class="logo">
+    <a href="https://tetheresemarie.github.io/kodego-demo/MP1Home.html" class="logo">
         <img src="assets/mp1.png"; width="300px"; height="300px"; alt="">
         <hr>
 
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-          <a class="navbar-brand" href="https://tetheresemarie.github.io/kodego-demo/MP1Contact.html">JOHNMATT REAL ESTATE PH</a>
+          <a class="navbar-brand" href="https://tetheresemarie.github.io/kodego-demo/MP1Home.html">JOHNMATT REAL ESTATE PH</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
           data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -162,25 +173,25 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="https://tetheresemarie.github.io/kodego-demo/MP1Home.html">HOME</a>
+                <a class="nav-link active" aria-current="page" href="https://tetheresemarie.github.io/kodego-demo/MP1Home.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="https://tetheresemarie.github.io/kodego-demo/MP1Condo.html">CONDOMINIUMS</a>
+                <a class="nav-link" href="https://tetheresemarie.github.io/kodego-demo/MP1Condo.html">Condominiums</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="https://tetheresemarie.github.io/kodego-demo/MP1Lot.html">HOUSE & LOTS</a>
+                <a class="nav-link" href="https://tetheresemarie.github.io/kodego-demo/MP1Lot.html">House & Lots</a>
               </li>
                             
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  SERVICES</a>
+                  Services</a>
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="https://tetheresemarie.github.io/kodego-demo/MP1PMO.html">Property Management</a></li>
                   <li><a class="dropdown-item" href="https://tetheresemarie.github.io/kodego-demo/MP1Docs.html">Land Title & Documentation</a></li>
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="https://tetheresemarie.github.io/kodego-demo/MP1Contact.html">CONTACT</a>
+                <a class="nav-link" href="https://tetheresemarie.github.io/kodego-demo/MP1Contact.html">Contact</a>
               </li>
             </ul>
             <form class="d-flex" role="search">
@@ -246,27 +257,15 @@
     <h3> PROPERTY INVESTING in METRO DAVAO</h3>
     <br>
     <div class="iframe">
-    <iframe width="750" height="450" src="https://www.youtube.com/embed/uC8kKtSyMSg" title="YouTube video player" 
-    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe width="800" height="500" src="https://www.youtube.com/embed/uC8kKtSyMSg" title="YouTube video player" 
+      frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>  
     </div>
     <br>
     <br>
     <h3> DEVELOPER ACCREDITATION</h3>
     <br>
-    <div class="container text-center">
-      <div class="row">
-        <div class="col">
-          <img src="assets/mp9.jpg" width="100px" height="100px" class="img-fluid" alt="...">
-          <img src="assets/mp10.jpg" width="100px" height="100px" class="img-fluid" alt="...">
-          <img src="assets/mp11.jpg" width="100px" height="100px" class="img-fluid" alt="...">
-        </div>
-        <div class="col">
-          <img src="assets/mp18.jpg" width="100px" height="100px" class="img-fluid" alt="...">
-          <img src="assets/mp19.jpg" width="100px" height="100px" class="img-fluid" alt="...">
-          <img src="assets/mp17.jpg" width="100px" height="100px" class="img-fluid" alt="...">
-        </div>
-    </div> 
+    <img src="assets/mp94.jpg" class="img-fluid" alt="...">
     <br>
     <h4>PASSIVE INCOME IN REAL ESTATE:</h4> 
     <h4>Earn while you sleep or while having a vacation</h4>
@@ -280,7 +279,7 @@
     <!--Footer-->
     <footer>
       <div class="py-4 #ffde59 text-green-300">
-        <div class="container">
+        <div class="container-footer">
           <div class="row align-items center">
             <p class="text-sm mb-md-0">Copyright &copy; 2022 Johnmatt Real Estate Services.</p>
             <p>All Rights Reserve</p>
