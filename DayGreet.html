@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch Case</title>
+    <style>
+        body {
+            background-color: rgb(247, 198, 206);
+            color:#880588;
+        }
+        h1 {
+            color: #880588;
+            margin-top: 20px;
+            margin-left: 50px;
+        }
+        #random-day {
+            margin-left: 50px;
+            font-size: larger;
+        }
+       #msg {
+            margin-left: 50px;
+            font-style: italic;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 30px;
+            font-weight: bolder;
+       }
+        
+
+    </style>
+</head>
+<body>
+    <h1>Daily Greetings from the Heart</h1>
+    <input type="text" name="random-day" id="random-day" placeholder="Enter Day">
+    <button onclick="switchDemo()">Click Me</button>
+    <p id="msg"></p>
+
+
+    <script>
+        function switchDemo (){
+            let input = document.getElementById('random-day').value;
+            console.log(input);
+            let pE1Msg = document.getElementById("msg");
+
+            switch(input) {
+                case 'monday': 
+                    pE1Msg.textContent = 'This is your MONDAY reminding that you can handle whatever this week throws at you.';
+                break;
+                case 'tuesday':
+                    pE1Msg.textContent = 'Rid yourself from negativity and have a positively Terrific TUESDAY!';
+                break;
+                case 'wednesday':
+                    pE1Msg.textContent = 'Beautiful minds inspire others... Happy Wednesday!';
+                break;
+                case 'thursday':
+                    pE1Msg.textContent = 'Always be grateful in everything. Thankful Thursday! ';
+                break;
+                case 'friday':
+                    pE1Msg.textContent = 'Trust in your abilities to manifest anything you desire. Have a fantastic Friday!';
+                break;case 'saturday':
+                    pE1Msg.textContent = 'Simply Saturday! Everyday shines when we let our positive attitude shine through.';
+                break;case 'sunday':
+                    pE1Msg.textContent = 'Enjoy your Sunday! Have faith in your heart and courage to fulfill all your dreams.';
+                break;
+                default:pE1Msg.textContent = 'Remember: God loves you!';
+            }
+
+        }
+    </script>
+    
+</body>
+</html>

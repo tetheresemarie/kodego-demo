@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Grocery List</title>
+    <style>
+    body {
+        margin: 5px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: bolder;
+        font-size: large;
+        background-color: #eeade1;
+        color: #880574;
+    }
+    h1{
+        text-align: left;
+        margin-left: 40px;
+    }
+    h2 {
+        text-align: left;
+        margin-left: 40px;
+    }
+    #btn {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: bold;
+        font-size: larger;
+        margin: 40px;
+        align-items: left;
+        justify-items: left;
+        padding: 4px;
+        color: rgb(248, 211, 217);
+        background-color: #cd2fad;
+        border-radius: 5px;
+        font-style: normal;
+        text-shadow: #880588;
+    }
+    #ulist {
+        margin-left: 100px;
+        display:block;        
+    }
+    
+
+</style>
+</head>
+<body>
+    <h1>MUST-HAVE GROCERY ITEMS USING <b>"FOR LOOP"</b></h1>
+    <h2>Do you want to know my favorite grocery items?</h2>
+    <button id="btn">MY GROCERY LIST</button>
+    <div class="container">
+        <ul id="ulist"></ul>
+    </div>
+            
+</body>
+<script>
+    btn.onclick=function(){
+        var names=["Pork","Chicken","Beef","Milk","Butter","Eggs","Cocoa",
+        "Coffee","Juice","Soda","Flour","Oatmeal","Herbs","Bread","Cheese",
+        "Chips","Tea","Apple","Banana","Onion","Garlic"];
+        var tx="";
+        for(var i=0;i<names.length;i++){
+            tx+= "<li>" +names[i] +"<br>"
+            ulist.innerHTML=tx;
+        }
+    }
+</script>
+</html>

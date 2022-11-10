@@ -1,0 +1,67 @@
+html {
+    background-color: rgb(248, 215, 221);
+    height: 100%;
+}
+h1 {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #880588;
+}
+p {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #cd2fad;
+    font-weight: 700;
+}
+#container {
+    height: 450px;
+    width: 320px;
+    background-color: white;
+    display: grid;
+    margin: 0 auto;
+    border: 5px solid #140437
+    grid-template-columns 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 50px 1fr;
+}
+#input {
+    height: 25px;
+    width: 250px;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    justify-self: center;
+    align-self: center;
+}
+#meter {
+    height: 25px;
+    width: 125px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    justify-self: center;
+    margin: 3px;
+}
+#feet {
+    height: 25px;
+    width: 125px;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    justify-self: center;
+    margin: 3px;
+}
+#output {
+    height: 25px;
+    width: 250px;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    justify-self: center;
+}

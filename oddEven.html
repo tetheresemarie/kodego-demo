@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVEN & ODD</title>
+    <style>
+        body {
+            background-color: #fcddf5;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        h1 {
+            color:#880580;
+            margin-left: 40px;
+        }
+        h3 {
+            color:#140437;
+            margin-left: 40px;
+        }
+        label {
+            align-items: center;
+            justify-items: center;
+            display: flex;
+            padding: 0; 
+            margin-left: 0;
+            font-size: larger;
+            margin-left: 40px;
+        }
+        #number {
+            align-items: center;
+            justify-items: center;
+            display: flex;
+            padding: 0;
+            margin-left: 20px;
+        }
+        input {
+            width: 300px;
+            height: 30px;
+            border-radius: 5px;
+            border: 2px solid #140437;
+            outline: none;
+            margin-left: 40px;
+        }
+        #showmsg {
+            color: #cd2fad;
+            align-items: center;
+            justify-items: center;
+            display: flex;
+            padding: 10px;
+            margin-left: 40px;
+            font-size: larger;
+            font-weight: bold;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Find EVEN or ODD Number</h1>
+    <h3>Type your desired number to know if it is an Even or Odd number</h3>
+    <br>
+        <label>Enter Number</label><br/>
+        <input type="number"name="" id="oddeven" onkeyup="isCheck()"><span id="showmsg"></span>
+    
+    <script>
+        function isCheck(){
+            var num = document.getElementById('oddeven').value;
+            //alert(num);
+            if ((num % 2) === 0){
+                document.getElementById('showmsg').innerHTML ="YES! number " +num+ " is an EVEN number"; 
+            }
+            else{
+                document.getElementById('showmsg').innerHTML ="HEY! number " +num+ " is an ODD number"; 
+            }
+            if(num==""){
+                document.getElementById ('showmsg').innerHTML = "";
+            }
+
+        }
+    </script>
+
+    
+</body>
+</html>
