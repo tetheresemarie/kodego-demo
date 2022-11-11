@@ -59,7 +59,10 @@ p {
     grid-row-end: 3;
     justify-self: center;
 }
-section {
+.section {
     padding: 20px; 
     margin: 35px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
 }
