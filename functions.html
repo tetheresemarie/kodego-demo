@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions in Javascript</title>
+
+    <script>
+        
+        function greetUser(){
+            alert("Good Evening!");
+
+        }
+
+        const fxn = function(){ //function expression 
+            console.log("I was called!");
+        }
+
+        const logMessage = function loggingFxn(){ //function expression
+            console.log('loggingFxn function call was executed!')
+        }
+        const add = functions(a,b){
+            alert ("sum is" + (a+b));
+        }
+    </script>
+</head>
+<body onload="greetUser()">
+    <h1>Functions</h1>
+    
+    <label for="">Enter First Number</label>
+    <input type="text" id="first-num">
+    <br />
+    <label for="">Enter Second Number</label>
+    <input type="text" id="second-num">
+    <br/>
+    <button onclick="add(document .getElementById('first-num'))">Show Result</button>
+</body>
+</html>

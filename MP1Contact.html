@@ -51,13 +51,13 @@
         }
         h3 {
             color: #c9e265;
-            font-weight:300;
+            font-weight:700;
             font-size: 20px;
             text-align: center;  
         }
         h4 {
             color: #c9e265;
-            font-weight:500;
+            font-weight:400;
             font-size: 20px;
             text-align: center;
         }
@@ -109,16 +109,29 @@
             justify-content: center;
             align-items: center;
        }
-       .map-area {
-            width: 750px;
-            height: 592px;
-            background:#c9e265;
-            box-shadow: rgba(0,0,0,35) 0 5px 15px;
+       .btn{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight:bolder;
+            font-style: normal;
+            color: #09390a;
+            background-color: #ffde59;
+            font-size: large;
        }
-       .map-area iframe {
-            width: 100%;
-            height: 100%;
-            border: none;
+       .btn-2{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight:700;
+            font-style: normal;
+            color: #ffde59;
+            background-color: #09390a;
+            font-size: x-large;
+            padding: 10px;
+            border-radius: 10px;
        }
 
        /* responsive */
@@ -127,24 +140,19 @@
           margin-bottom: 30px;
           padding: auto;
         }
-        .map-area{
-          width: 100%;
-          height:400px;
-          padding: auto;
-        }
        }
             
 
 </style>
 </head>
 <body>
-    <a href="http://tetheresemarie.github.io/kodego-demo/MP1Contact.html" class="logo">
+    <a href="https://tetheresemarie.github.io/kodego-demo/MP1Home.html" class="logo">
         <img src="assets/mp1.png"; width="200px"; height="200px"; alt="">
     <br>
     <br>
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
-        <a class="navbar-brand" href="http://tetheresemarie.github.io/kodego-demo/MP1Contact.html">JOHNMATT REAL ESTATE PH</a>
+        <a class="navbar-brand" href="https://tetheresemarie.github.io/kodego-demo/MP1Home.html">JOHNMATT REAL ESTATE PH</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -173,6 +181,10 @@
               <a class="nav-link active" href="http://tetheresemarie.github.io/kodego-demo/MP1Contact.html">Contact</a>
             </li>
           </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
         </div>
       </div>
     </nav>
@@ -196,7 +208,7 @@
       </div>
       <br>
         <div class="row">
-            <div class="col-md-6 col-sm-12 col-xs-12">
+            <div class="col-md-6 col-sm-12 col-xs-12 mx-auto">
               <div class="contact-form">
                 <form>
                   <div class="form-group">
@@ -215,43 +227,41 @@
                     <textarea class="form-control" cols="30" rows="10" placeholder="Message"></textarea>
                   </div>
                   <br>
-                  <button type="submit" class="btn btn-success">Submit</button>
+                  <a href="https://tetheresemarie.github.io/kodego-demo/MP1Well.html" class="btn-2 btn-success">Submit</a>
                 </form>
               </div>
-            </div>
-            <div class="col-md-6 col-sm-12 col-xs-12">
-              <div class="map-area">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54191.5136152353!2d125.59038665729483!3d7.1031135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x32f96c39f57deb55%3A0x24f397e98992470a!2sLANANG%20BUSINESS%20PARK!5e1!3m2!1sen!2sph!4v1667394814339!5m2!1sen!2sph" 
-                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-              </div>
-            </div>
+            </div>           
         </div>
-       
+        <br>
         <br>
           <!--Footer-->
-          <footer>
-          <div class="py-4 #ffde59 text-green-300">
-            <div class="container-footer">
-              <div class="row align-items center">
-                <p class="text-sm mb-md-0">Copyright &copy; 2022 Johnmatt Real Estate Services.</p>
-                <p>All Rights Reserve</p>
+          <div class="container my-5">
+
+            <footer class="text-center text-lg-start" style="background-color: #09390a;">
+              <div class="container d-flex justify-content-center py-5">
+                <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #ffde59;">
+                  <i class="fab fa-facebook-f"></i>
+                </button>
+                <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #ffde59;">
+                  <i class="fab fa-youtube"></i>
+                </button>
+                <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #ffde59;">
+                  <i class="fab fa-instagram"></i>
+                </button>
+                <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #ffde59;">
+                  <i class="fab fa-twitter"></i>
+                </button>
               </div>
-                <div class="socials">
-                  <a href="http://youtube.com">
-                      <i class="fab fa-facebook"></i>
-                  </a>
-                  <a href="http://youtube.com">
-                      <i class="fab fa-instagram"></i>
-                  </a>
-                  <a href="http://youtube.com">
-                      <i class="fab fa-linkedin"></i>
-                  </a>
-                  <a href="http://youtube.com">
-                      <i class="fab fa-youtube"></i>
-                  </a>
-                </div>     
+          
+              <!-- Copyright -->
+              <div class="text-center text-white p-3" style="background-color: #09390a;">
+                © 2022 Copyright:
+                <a class="text-white" href="https://tetheresemarie.github.io/kodego-demo/MP1Home.html">Johnmatt Real Estate Services</a>
               </div>
+              <!-- Copyright -->
             </footer>
+            
+          </div>
                     
           
           

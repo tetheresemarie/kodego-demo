@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box;  
+    padding: 0;
+    margin: 0;
+  }
+  body {
+      background-image: url('assets/css.jpg');
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  .body h1{
+      margin-top: 0px;
+      color: #fff;
+      letter-spacing: 4px;
+      padding: 20px;
+      background-color: #880588;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+  .container {
+      display: flex;
+      justify-content: center;
+  }
+  .card {
+      background: #f5c1ea;
+      width: 400px;
+      height: 480px;
+      margin: 20px;
+      border-radius: 15px;
+  }
+  
+  .card-image {
+      height: 300px;
+      margin-bottom: auto;
+      background-size: cover;
+      border-radius: 15px 15px 0 0;
+  }
+  .exer-1 {
+      background-image: url('assets/html1.jpg');
+  }
+  .exer-2 {
+      background-image: url('assets/html2.jpg');
+  }
+  .exer-3 {
+      background-image: url('assets/html3.jpg');
+  }
+  .exer-4{
+      background-image: url('assets/html4.jpg');
+  }
+  .card h2 {
+      padding: 10px; 
+      text-align: center;   
+      justify-items: center;
+  }
+  .card p {
+      padding: 8px;
+      text-align: center;   
+      justify-items: center;
+  }
+  .card a {
+      background-color: #880588;
+      color: #fff;
+      padding: 10px 20px;
+      display: block;
+      text-align: center;
+      margin: 0px 5px;
+      border-radius: 10px;
+  }
+  button {
+      color: #fff;
+      letter-spacing: 3px;
+      padding: 10px;
+      margin: auto;
+      background-color: #880588;
+      display: flex;
+      align-items: center;
+      justify-items: center;
+      border-radius: 10px;
+  }
