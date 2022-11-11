@@ -6,11 +6,17 @@ h1 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #880588;
     font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-items: center;
 }
 p {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #cd2fad;
     font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-items: center;
 }
 #container {
     height: 400px;
@@ -61,5 +67,13 @@ p {
 }
 .section {
     padding: 20px; 
+<<<<<<< HEAD
     margin-left: 100px;
 }
+=======
+    margin: 35px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+>>>>>>> 4b7db2750e02d994db234855dfe7e9cee96ec4b9
