@@ -4,71 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="TodoList.css"/>
     <title>To-Do List</title>
-    <style>
-        body {
-            background-color: rgb(248, 193, 202);
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-        h1 {
-            color: #880588;
-            margin-left: 50px;
-            font-size: 40px;
-        }
-        button {
-            font-size: 15px;
-            font-weight: bold;
-            border-radius: 3px;
-        }
-        span {
-            font-size: 20px;
-            margin-left: 40px;
-        }
-        #form-container {
-            margin-left: 40px;
-            width: auto;
-            height: auto;
-        }
-        label {
-            margin-left: 5px;
-            padding: auto;
-        }
-        #text {
-            font-size: 15px;
-        }
-
-
-    </style>
+   
 </head>
 <body>
     <h1>My To-Do List</h1>
-    <p>
-        <span>Today's No. of Activities:</span>
-        <input type="text" id="num-activities"/>
-        <button onclick = "generateTodoList()">GENERATE</button>
-    </p>
-    <div id="form-container">
-        <ol id="olist"></ol>
-    </div>
+        <div class="container">
+            <div style="display: flex">
+            <input id="inputField" type="text" /><button id="addToDo">+</button>
+            </div>
+            <div class="to-dos" id="ToDoContainer"></div>
+        </div>    
 
-    <script>
-        let pContainer = document.querySelector('#form-container');
-        pContainer.innerHTML = '<input type="text">';
-        function generateTodoList(){
-            let totalActivities = parseInt (document.querySelector ('#num-activities').value);
-            let counter = 0;
-            let strTags = '';
-            while(counter < totalActivities){
-                counter++;
-                strTags += '</p>';
-                strTags += '<label>To-Do' + counter + '</label>';
-                strTags += '<input type="text" placeholder="Activity' + counter + '"/>';
-                strTags += '</p>';
-                console.log (counter);
-            }
-            strTags += '<p><input type="Submit" value="Submit"</p>';
-            pContainer.innerHTML = strTags;
-        }
-    </script>
+    <br>
+        <img src="assets/TodoList.JPG" alt="script">
+
+    <script src="TodoList.js"></script>    
+        
+   
 </body>
 </html>

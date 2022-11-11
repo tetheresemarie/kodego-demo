@@ -6,15 +6,12 @@
     font-size: 20px;   
 }
 body {
-    height: 100vh;
-    background-color:rgb(252, 199, 208);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    background-color: #fcddf5;
+    
 }
 .container {
     width: 400px;
-    background-color:lavenderblush ;
+    background-color:lavender ;
     padding: 20px 70px 50px;
     border-radius: 0;
     display: flex;
