@@ -3,28 +3,22 @@ html {
     height: 100%;
 }
 h1 {
-    display: flex;
-    align-content: center;
-    justify-content: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #880588;
+    font-weight: 700;
 }
 p {
-    display: flex;
-    align-content: center;
-    justify-content: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #cd2fad;
     font-weight: 700;
 }
 #container {
-    height: 450px;
+    height: 400px;
     width: 320px;
     background-color: white;
     display: grid;
     margin: 0 auto;
-    border: 5px solid #140437
-    grid-template-columns 1fr 1fr 1fr 1fr;
+    border: 5px solid #140437;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 50px 1fr;
 }
@@ -64,4 +58,8 @@ p {
     grid-row-start: 3;
     grid-row-end: 3;
     justify-self: center;
+}
+section {
+    padding: 20px; 
+    margin: 35px;
 }
