@@ -1,31 +1,22 @@
-html.body {
-    width: 50%;
-    margin: 0 auto;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+}
+body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100vh;
+    overflow: hidden;
+    background: #cd2fad;
 }
 .container {
-    width: 360px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
-#inputField {
-    width: 300px;
-    height: 45px;
-    border: 1px solid black;
-    outline: none;
-    font-size: 25px;
-    vertical-align: middle;
-}
-#addToDo {
-    height: 50px;
-    width: 50px;
-    border: 1px solid black;
-    vertical-align: middle;
-    font-size: 30px;
-}
-.to-dos {
-    margin-top: 25px;
-}
-.para {
-    margin: 0;
-    cursor: pointer;
-    font-size: 20px;
-}
+
