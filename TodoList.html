@@ -4,23 +4,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="TodoList.css"/>
     <title>To-Do List</title>
-   
+    <style type="text/css">
+        .checked {
+            text-decoration: line-through;
+            font-style:italic;
+            color: #333;
+        }
+        body {
+            background-color: #fcddf5;
+            color: #880579;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding-left: 40px;
+        }
+    </style>    
 </head>
 <body>
-    <h1>My To-Do List</h1>
-        <div class="container">
-            <div style="display: flex">
-            <input id="inputField" type="text" /><button id="addToDo">+</button>
-            </div>
-            <div class="to-dos" id="ToDoContainer"></div>
-        </div>    
-
     <br>
-        <img src="assets/TodoList.JPG" alt="script">
+    <h1>My To-Do List</h1>
+    <br>
+    <input type="text" id="to-do" />
+    <button onclick="js_func()">Add</button>
+    <ul id="myList"></ul>    
+    <script type="text/javascript">
+        var list = document.getElementById("myList");
+        function js_func() {
+            var value = document.getElementById("to-do").value;
+            var li = document.createElement("LI");
+            var textNode = document.createTextNode (value);
+            li.appendChild (textNode);
+            list.appendChild(li);
+        }
+        list.addEventListener ("click", function(ev) {
+            if(ev.target.tagName === "LI") {
+                ev.target.classList.toggle ("checked");
+            }
+        }, false);
+    </script>    
+    <br>
+    <br>
+    <br>
+    <br>
+    
+        <img src="assets/TodoList2.JPG" alt="script">
 
-    <script src="TodoList.js"></script>    
+    
         
    
 </body>
